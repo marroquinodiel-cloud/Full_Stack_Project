@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graduation Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app-shell">
+    <section class="hero">
+        <div>
+            <h1>Graduation Tracker</h1>
+            <p>Welcome Scarlet Raider! This website is designed to keep your computer science students on track. The required courses are listed on the left side, just click on the classes you have completed and you're advisor will let you know what classes you still have to take.</p>
+        </div>
+        <div class="badge">Rutgers University-Newark</div>
+    </section>
+    <!--Left-hand side of the website where courses and credits are listed-->
+    <section class="workspace">
+        <aside class="panel topics">
+            <h2>Degree Requirements Checklist</h2>
+            <p>Select the classes you have or credit amounts in each section and click "Done" to send them to your advisor. They are here to help !</p>
+            <div class="accordion-container">
+                <!-- Section 1: Major Core -->
+                <details open class="menu-section">
+                    <summary>Major Requirements</summary>
+                    <div class="section-content">
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Computers & Programming I"> Computers & Programming I
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Computers & Programming II"> Computers & Programming II
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Computer Organization"> Computer Organization
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Programming Language Concepts"> Programming Language Concepts
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Intensive Programming in Linux"> Intensive Programming in Linux
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Principles of Operating Systems"> Principles of Operating Systems
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Data Structure & Algorithm Design"> Data Structure & Algorithm Design
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Advanced Data Structures & Algorithm Design"> Advanced Data Structures & Algorithm Design
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Software Engineering"> Software Engineering
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Computer Science Project"> Computer Science Project
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Calculus I"> Calculus I
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Calculus II"> Calculus II
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Calculus III"> Calculus III
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Discrete Structures"> Discrete Structures
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Probability & Statistics"> Probability & Statistics
+                        </label>
+                        <label class="course-checkbox-label">
+                            <input type="checkbox" class="course-check" data-category="major" value="Numerical Analysis or Numerical Algorithms"> Numerical Analysis or Numerical Algorithms
+                        </label>
+                    </div>
+                </details>
+                <details class="menu-section">
+                    <summary>General Education Requirements</summary>
+                    <div class="section-content">
+                        <div class="gened-credit-row">
+                            <label>Basic Writing Skills</label>
+                            <select class="gened-select" data-category="Basic Writing Skills">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="2">2 Credits</option>
+                                <option value="3">3 Credits</option>
+                                <option value="4">4 Credits</option>
+                                <option value="5">5 Credits</option>
+                                <option value="6">6+ Credits</option>
+                            </select>
+                        </div>
+
+                        <div class="gened-credit-row">
+                            <label>Quantitative Reasoning</label>
+                            <select class="gened-select" data-category="Quantitative Reasoning">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="3">3+ Credits</option>
+                            </select>
+                        </div>
+
+                        <div class="gened-credit-row">
+                            <label>Natural Sciences</label>
+                            <select class="gened-select" data-category="Natural Sciences">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="2">2 Credits</option>
+                                <option value="3">3 Credits</option>
+                                <option value="4">4 Credits</option>
+                                <option value="5">5 Credits</option>
+                                <option value="6">6 Credits</option>
+                                <option value="7">7 Credits</option>
+                                <option value="8">8+ Credits</option>
+                            </select>
+                        </div>
+                        <div class="gened-credit-row">
+                            <label>Social Sciences</label>
+                            <select class="gened-select" data-category="Social Sciences">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="2">2 Credits</option>
+                                <option value="4">3 Credits</option>
+                                <option value="5">5 Credits</option>
+                                <option value="6">6+ Credits</option>
+                            </select>
+                        </div>
+                        <div class="gened-credit-row">
+                            <label>History and Literature</label>
+                            <select class="gened-select" data-category="History and Literature">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="2">2 Credits</option>
+                                <option value="3">3 Credits</option>
+                                <option value="4">4 Credits</option>
+                                <option value="5">5 Credits</option>
+                                <option value="6">6 Credits</option>
+                                <option value="7">7 Credits</option>
+                                <option value="8">8 Credits</option>
+                                <option value="9">9+ Credits</option>
+                            </select>
+                        </div>
+                        <div class="gened-credit-row">
+                            <label>Arts and Media</label>
+                            <select class="gened-select" data-category="Arts and Media">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="1">2 Credits</option>
+                                <option value="3">3+ Credits</option>
+                            </select>
+                        </div>
+                        <div class="gened-credit-row">
+                            <label>Other Liberal Arts</label>
+                            <select class="gened-select" data-category="Other Liberal Arts">
+                                <option value="0">0 Credits</option>
+                                <option value="1">1 Credits</option>
+                                <option value="2">2 Credits</option>
+                                <option value="3">3+ Credits</option>
+                            </select>
+                        </div>
+                    </div>
+                </details>
+                <details class="menu-section">
+                    <summary>Elective Credits</summary>
+                    <div class="section-content elective-panel">
+                        <label for="electiveSelect">Completed Elective Credits:</label>
+                        <select id="electiveSelect" class="styled-select">
+                            <option value="0">0 Credits</option>
+                            <option value="1">1 Credits</option>
+                            <option value="2">2 Credits</option>
+                            <option value="3">3 Credits</option>
+                            <option value="4">4 Credits</option>
+                            <option value="5">5 Credits</option>
+                            <option value="6">6 Credits</option>
+                            <option value="7">7 Credits</option>
+                            <option value="8">8 Credits</option>
+                            <option value="9">9+ Credits</option>
+                        </select>
+                        <span class="caption"></span>
+                    </div>
+                </details>
+            </div>
+            <button id="auditBtn" class="send-btn" style="width: 100%; margin-top: 24px; padding: 14px;">Done</button>
+        </aside>
+        <!--Right-hand side where the remaining courses are displayed-->
+        <div class="chat-container">
+
+            <div class="status-row">
+                <h2>Your Advisor is Here To Help</h2>
+                <div class="status"><span class="dot"></span> Live Updates</div>
+            </div>
+            <div id="chatBox" class="chat-box">
+                <div class="message bot">
+                    <strong>Advisor:</strong> Hello! Let's see what classes you still have to take to graduate. For your major select the classes you have successfully completed. For genderal education, enter the amount of credits you currently have for each section. Finally, enter the amount of elective credits you have completed for your major.
+                </div>
+            </div>
+            <div class="learning-note">
+                <strong>Remember:</strong> Each course must be completed with a letter grade of C or higher!
+            </div>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

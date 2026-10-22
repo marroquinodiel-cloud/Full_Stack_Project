@@ -1,0 +1,14 @@
+{
+  "name": "graduation-tracker",
+  "version": "2.0.0",
+  "description": "Specifically for Computer Science students to check what classes and credits they still need for graduation.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Student",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
